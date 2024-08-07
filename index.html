@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/sunburst.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 </head>
 <body>
@@ -31,25 +31,139 @@
                after your college account has been shut down. 
             </p>
             <p>
-                The first URL for this repository is <a href="#repository here">JS002.The Console</a> and you have 
+                The first URL for this repository is <a href="https://github.com/Leoghanta/002---The-Console" target="_blank">https://github.com/Leoghanta/002---The-Console</a> and you have 
                 a couple of options to grab this repository.
             </p>
-            <p></p>
+            <p>The first way is to go to the web address and select Download As Zip and this will download 
+                all the files in this project. Extract the Zip file to a folder in your OneDrive and then 
+                open your VSCode to this folder. 
+                <div class="img-caption-container">
+                    <img width="100%" src="images/downloadaszip.png" alt="Image of GitHub to download as zip">
+                    <figcaption>Download As Zip</figcaption>
+                </div>
+            </p>
+            <p>
+                The other way is to use VSCode directly to clone a repository. This will ask you where you 
+                wish to save locally and you can create a folder on your OneDrive.  
+                <div class="img-caption-container">
+                    <img width="100%" src="images/cloneRepository.png" alt="Image of Cloning a repository in VSCode">
+                    <figcaption>Cloning a repository on VSCode</figcaption>
+                </div>
+            </p>
+            <p>
+                If you have your own Git Hub account (I advise you do), it will take some practice to 
+                push and pull your own repositories. Here is a short video for you that explains how to
+                create repositories using VSCode. 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aM9BHJkaQoo?si=URhIZNktHuaQhlGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
 
+        <div class="browser-section">
+            <h2>Hello World!</h2>
+            <p>Welcome to the Web. If you are viewing this as a website, either in a live server, or as 
+               as file, you are now ready to code JavaScript. Let's introduce you to the Developer Tools. All browsers 
+               have a developer tools options and you can normally get to it through the menu system. F12 also brings up 
+               developer options.  The video attach will walk through what the devleoper tools are for and how they can 
+               help building and debugging your web sites. 
+            </p>
+            <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ilZnwY-gYcI?si=XLl6yOqxjYhQHeS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+            </p>
+            <p>
+                In this workshop, we'll use the console as this is where a lot of the background communication appears and we 
+                can add javascript directly into the console.
+            </p>
+        </div>  
 
-        <div class="img-caption-container">
-            <img src="path/to/your/image.jpg" alt="Description of image">
-            <figcaption>Your caption goes here</figcaption>
+        <div class="browser-section">
+            <h2>Console.log()</h2>
+            <p>The console is a good place to send messages for debugging. We can enter code directly into the 
+                console and because the browser is live, it will return values.  In the console try the following 
+                code.
+            </p>
+            <pre><code class="language-javascript">
+console.log("Hello World");
+            </code></pre>
+            <p>
+                Let's unpack this line of code. </br>
+                The console is an object in the browser and we have access to the properties and methods
+                within the console. One of the methods is log. You can see all the properties and methods 
+                for the console by just typing <span class="highlight">console.</span> and a drop down 
+                list will appear with all the properties and methods. 
+            </p>
+            <p> log is a function, this means that it will run a piece of code in the background. It doesn't 
+                matter what that code is, but we know that the code will send a message to the console screen.
+            </p>
+            <p>Functions have brackets. Within these brackets, we place an argument. This argument is the message 
+                we will send to the console screen. <span class="highlight">console.log("Hello World");</span> 
+            </p>
+            <p>Lastly, we use a semi-colon. Semi-Colons are necessary in many programming languages as this tells 
+                the browser that this is the end of the statement.  </p>
+            <p> Let's try some other console commands...</p>
+            <pre><code class="language-javascript">
+console.log("My Name Is ...");
+console.warn("Warning, Warning");
+console.error("Oh No! I'm Broken!");
+console.clear();
+alert("Boo!");
+            </code></pre>
+        </div>  
+
+        <div class="browser-section">
+            <h2>Problems?</h2>
+            <p>Working with code is great until something goes wrong. Let's take a look at a typical error message.
+               Try this code:    
+            </p>
+            <pre><code class="language-javascript">
+console.log("Hello";
+            </code></pre>
+            <p>Not closing the brackets will provide a syntax error : Invalid or Unexpected Token. The syntax is 
+                the arangement of words and symbols that make up the code - This is the grammar that the code 
+                understands. When something is wrong and the code does not understand, the error appears.  
+                Invalid or Unexpected token meant that the code expected something (a close bracket) that wasn't there.
+            </p>
+            <p>When the browser can not understand the code, it will stop the program and report the error. We call these 
+                <span class="highlight">exceptions</span>. </p>
         </div>
 
         <div class="browser-section">
-            <h2>Summary</h2>
-            <p></p>
+            <h2>Quick Maths</h2>
+            <p>Computers are essentially giant calculators and their main purpose is to perform mathematical 
+                calculations. We can do that directly in the console log.    
+            </p>
+            <pre><code class="language-javascript">
+console.log(5 + 5);
+console.log(99.5 - 14.3);
+console.log(190 / 13);
+console.log(86 * 12);
+console.log(5 ** 2);
+console.log(153 % 5);
+console.log(10++);
+console.log(10--);
+            </code></pre>
+            <p>Try out these lines of code. What do you think each arithmetic operator perform?</p>
+        </div>
+
+        <div class="browser-section">
+            <h2>Q&A and Troubleshooting</h2>
             <ul id="taskList">
-                <li>✅ item 1</li>
-                <li>✅ item 2</li>
-                <li>✅ item 3</li>
+                <li>✅ Watch out for capitalisation. Console.Log() is not the same as console.log()</li>
+                <li>✅ Make sure that every open bracket ( is closed )</li>
+                <li>✅ JavaScript will run without semi-colons, but these will become increasingly 
+                    important - and it is good practice</li>
             </ul>
+            <p class="highlight">Remember the <a href="https://dundeeandangus-my.sharepoint.com/:wb:/g/personal/t_wilson_dundeeandangus_ac_uk/ERq49vn8tKlEoNjZZgmK02cBp_yUB0hHAveXEr5zWCHZQA?e=taUgX8" target="_blank">Whiteboard</a>
+            is available for you to ask questions anonymously.</p>
+        </div>
+
+        <div class="browser-section">
+            <h2>Further Learning</h2>
+            <ul id="taskList">
+                <li>📖 <a href="https://www.w3schools.com/js/js_intro.asp" target="_blank">W3Schools Intro to JavaScript</li>
+                <li>👀 <a href="https://www.youtube.com/watch?v=i_23KUAEtUM" target="_blank">YouTube: Using GitHub</a></li>
+                <li>💻 <a href="https://code.visualstudio.com/docs/sourcecontrol/intro-to-git" target="_blank">Official Documentation</a></li>
+            </ul>
+            <p class="highlight">Remember the <a href="https://dundeeandangus-my.sharepoint.com/:wb:/g/personal/t_wilson_dundeeandangus_ac_uk/ERq49vn8tKlEoNjZZgmK02cBp_yUB0hHAveXEr5zWCHZQA?e=taUgX8" target="_blank">Whiteboard</a>
+            is available for you to ask questions anonymously.</p>
         </div>
     </div>
 

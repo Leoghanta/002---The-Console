@@ -144,6 +144,49 @@ console.log(10--);
         </div>
 
         <div class="browser-section">
+            <h2>Script.js</h2>
+            <p>The console is great for testing out small snippets of code but it can only perform one operation 
+                at a time. We, as coders, would like to run a sequence of operations, and for that we will need our
+                own program file. Typically we call this script.js but you can call this whatever you want. The suffix
+                .js tells the browser that this is a javascript file and it contains javascript code.  
+            </p>
+            <p>
+                This project already has a script.js and it is linked at the end of the body tag. Have a look at 
+                the HTML for this code.
+            </p>
+            <pre><code class="language-html">
+&lt;script src="script.js"&gt;&lt;/script&gt;
+            </code></pre>
+            <p>The script tag tells the browser that there is some JavaScript code and that it can be found 
+                in the source file script.js. Note that this is not a self-closing tab - this is because you 
+                could add javascript code within the open and close tags.
+            </p>
+            <pre><code class="language-html">
+&lt;script&gt;
+    alert ("This code is running from inside the HTML page.");
+&lt;/script&gt;
+            </code></pre>
+            <p>This is not considered good practice so we will ensure that all our JavaScript code is 
+                placed in the correct script.js file. This file has some comments and comments which are 
+                placed between /*...*/ are ignored by the browser - this means you can use these comment tags 
+                to write your own commentary. You'll be encouraged to do this throughout the course. 
+            </p>
+            <p>Add the following code to your script.js file.</p>
+            <pre><code class="language-javascript">
+/**
+* JavaScript File.
+* Your code can go here
+*/
+
+alert ("I am working from inside the script.js file");
+console.log ("This is a log from inside the script.js file");
+console.warn ("Notice the order of operations. JavaScript works from top to bottom.");
+            </code></pre> 
+            <p>If you can see your code working, you are now ready to become a JavaScript Coder.</p>
+        </div>
+
+
+        <div class="browser-section">
             <h2>Q&A and Troubleshooting</h2>
             <ul id="taskList">
                 <li>✅ Watch out for capitalisation. Console.Log() is not the same as console.log()</li>
@@ -170,6 +213,8 @@ console.log(10--);
     <footer>
         <p>&copy; J. Wilson. Dundee and Angus College.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js">
+        alert ("This code is running");
+    </script>
 </body>
 </html>
